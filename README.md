@@ -8,6 +8,7 @@ Use the following steps to manage code versioning:
 
 ```bash
 ls
+cd ..
 cd your-project-folder
 git status
 git add .

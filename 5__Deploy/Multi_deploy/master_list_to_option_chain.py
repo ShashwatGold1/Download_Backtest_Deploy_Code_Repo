@@ -10,9 +10,6 @@ from config import MYPATHS
 
 def run_master_list_to_option_chain():
 
-    if not datetime.now().time() < datetime.strptime("09:10:00", "%H:%M:%S").time():
-        f.play_sound(file_name = "Alert_01", error_message = "You missed today’s market — All because you were late.", raise_error = True)
-
     database_path = MYPATHS['data'] + "\\database.txt"
     line = ast.literal_eval(f.get_line(database_path, 2).strip())
     master_list_date = line['master_list_date'] 
@@ -21,6 +18,9 @@ def run_master_list_to_option_chain():
     today_date = f'{today.day}-{today.month}-{today.year}'
 
     if master_list_date != today_date:
+
+        if not datetime.now().time() < datetime.strptime("09:10:00", "%H:%M:%S").time():
+            f.play_sound(file_name = "Alert_01", error_message = "You missed today’s market — All because you were late.", raise_error = True)
 
         client_id = str(ast.literal_eval(f.get_line(database_path, 3).strip())['client_id'])
         access_token = str(ast.literal_eval(f.get_line(database_path, 4).strip())['access_token'])
