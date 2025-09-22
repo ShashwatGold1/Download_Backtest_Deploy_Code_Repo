@@ -32,7 +32,7 @@ def update_line(file_name, line_number, data):
 def get_next_five_dates(input_date):
     """
     Get 5 weekday dates from the same week in order: Thursday, Wednesday, Tuesday, Monday, Friday
-    Excludes holidays listed in holidays.json
+    Excludes holidays listed in D:/Programming/Download_Backtest_Deploy_data/1__Download/1__Download_data_ICICI_via_API/holidays.json
     
     Args:
         input_date (str): Date in format '2020-01-06T09:15:00.000Z'
@@ -40,7 +40,7 @@ def get_next_five_dates(input_date):
         list: List of weekday dates (excluding holidays) in format 'YYYY-MM-DDT07:00:00.000Z'
     """
     # Load holidays
-    with open('holidays.json', 'r') as file:
+    with open('D:/Programming/Download_Backtest_Deploy_data/1__Download/1__Download_data_ICICI_via_API/holidays.json', 'r') as file:
         holidays = json.load(file)
     
     # Parse input date
@@ -96,7 +96,7 @@ def get_monday_timestamps():
     Returns DataFrame with columns 'start_time' and 'end_time'
     """
     # Load holidays
-    with open('holidays.json', 'r') as file:
+    with open('D:/Programming/Download_Backtest_Deploy_data/1__Download/1__Download_data_ICICI_via_API/holidays.json', 'r') as file:
         holidays = json.load(file)
     
     # Set start and end dates
@@ -212,7 +212,7 @@ def get_all_weekdays(start_date):
     Generate all weekday dates from 2020-01-01 to today, excluding holidays
     Returns list of dates in format 'YYYY-MM-DDT07:00:00.000Z'
     """
-    with open('holidays.json', 'r') as file:
+    with open('D:/Programming/Download_Backtest_Deploy_data/1__Download/1__Download_data_ICICI_via_API/holidays.json', 'r') as file:
         holidays = json.load(file)
 
     # Set start and end dates
@@ -240,7 +240,7 @@ def find_next_expiry_date(input_date):
         str: Nearest equal or greater expiry date
     """
     # Read expiry dates from JSON file
-    with open('expiry_dates_list_code.json', 'r') as file:
+    with open('D:/Programming/Download_Backtest_Deploy_data/1__Download/1__Download_data_ICICI_via_API/expiry_dates_list_code.json', 'r') as file:
         expiry_dates = json.load(file)
     
     # Convert input date to datetime
@@ -334,7 +334,7 @@ def generate_symmetric_range(value, base_value=1000, default_range=5):
 
 def update_date_records(aa_a, bb_b):
     
-    file_path = r"date_records.json"
+    file_path = r"D:/Programming/Download_Backtest_Deploy_data/1__Download/1__Download_data_ICICI_via_API/date_records.json"
     new_record = {"processed_dates": aa_a, "downloaded_data_on": bb_b}
 
     try:
@@ -363,7 +363,7 @@ def update_date_records(aa_a, bb_b):
 
 def check_date_in_records(date_to_check):
     try:
-        with open("date_records.json", "r") as file:
+        with open("D:/Programming/Download_Backtest_Deploy_data/1__Download/1__Download_data_ICICI_via_API/date_records.json", "r") as file:
             data = json.load(file)
             
         for record in data:

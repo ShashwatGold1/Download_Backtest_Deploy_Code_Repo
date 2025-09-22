@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/D:\\Programming\\Download_Backtest_Deploy_data\\1__Download\\1__Download_data_ICICI_via_API/**)",
+      "Read(/D:\\Programming\\Download_Backtest_Deploy\\1__Download\\1__Download_data_ICICI_via_API/**)",
+      "Read(/D:\\Programming\\Download_Backtest_Deploy_data\\1__Download\\1__Download_data_ICICI_via_API/**)",
+      "Read(//d/Programming/Download_Backtest_Deploy_data/1__Download/1__Download_data_ICICI_via_API/**)",
+      "Read(//d/Programming/Download_Backtest_Deploy/**)",
+      "Read(//d/Programming/Download_Backtest_Deploy_data/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
