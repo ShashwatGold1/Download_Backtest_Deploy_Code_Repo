@@ -1,0 +1,403 @@
+<div class="common-tabs">
+                                                            <nav>
+                                                                <div class="nav nav-tabs" role="tablist"> <a class="nav-item nav-link show" data-bs-toggle="tab" href="#cr_indices_daily" role="tab" aria-selected="false" tabindex="-1">Daily Reports</a>
+                                                                    <a class="nav-item nav-link" data-bs-toggle="tab" href="#cr_indices_monthly" role="tab" aria-selected="false" tabindex="-1">Monthly Reports </a>
+                                                                    <a class="nav-item nav-link active" data-bs-toggle="tab" href="#cr_indices_archives" role="tab" aria-selected="true">Archives</a>
+                                                                    <a class="nav-item nav-link" data-bs-toggle="tab" href="#cr_indices_common" role="tab" aria-selected="false" tabindex="-1">Common</a>
+                                                                </div>
+                                                            </nav>
+                                                            <div class="tab-content my-3 p-0">
+                                                                <div class="tab-pane fade" id="cr_indices_daily" role="tabpanel">
+                                                                    <div class="report_container mt-md-2">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col-md-4">
+                                                                                <h4 class="section-heading">Reports for <span id="cr_indices_futureDate">06-Oct-2025</span></h4>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <p class="formLabelStyle">
+                                                                                    <label for="crindicesDailySearch">Search a Report:</label>
+                                                                                    <input id="crindicesDailySearch" onkeyup="filterReports(this.value, '#cr_indices_daily')" type="text" class="form-control searchby_input" placeholder="Enter a keyword">
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row align-items-center mt-3">
+                                                                            <div class="col-12">
+                                                                                <label class="chk_container" role="checkbox" aria-checked="false" aria-labelledby="select all" tabindex="0">Select All Reports
+                                                                                    <input type="checkbox" class="check_uncheck">
+                                                                                    <span class="checkmark"></span>
+                                                                                </label>
+                                                                                <a onclick="downloadReports('#cr_indices_daily', 'daily')" href="javascript:;" class="link ms-3"> Multiple file Download <i class="fa fa-download"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="cr_indices_daily_Future" class="row my-3 checkrow withfavicons"><div class="row col-12"><div class="item col-md-4 mb-3">No Report.</div></div></div>
+                                                                        <div class="col-12">
+                                                                            <h4 class="section-heading"> Reports for <span id="cr_indices_currentDate">Oct 03,2025</span></h4>
+                                                                        </div>
+                                                                        <div id="cr_indices_daily_Current" class="row my-3 checkrow withfavicons"><div class="row col-12"><div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-link="https://nsearchives.nseindia.com/content/indices/top10nifty50_031025.csv" data-cat="capital-market" data-section="indices" data-type="daily-reports">  <div class="card h-100"> <div class="card-body position-relative">  <label class="chk_container" role="checkbox" aria-checked="false" aria-label="Select Report">NIFTY 50 Top 10 Holdings (csv)<input type="checkbox"><span class="checkmark"></span><span class="dailyReportfileSize">(0.34 KB)</span></label><button class="fav" aria-pressed="false"><i class="fa fa-star-o" aria-label="Favorite"></i> </button><span class="reportCardSegment asondate">top10nifty50_031025.csv</span><span class="reportDownloadIcon"><a href="javascript:;" target="_self" download="download" class="pdf-download-link" aria-label="Download File"></a> </span>   </div>  </div> </div><div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-link="https://nsearchives.nseindia.com/content/indices/ind_close_all_03102025.csv" data-cat="capital-market" data-section="indices" data-type="daily-reports">  <div class="card h-100"> <div class="card-body position-relative">  <label class="chk_container" role="checkbox" aria-checked="false" aria-label="Select Report">Daily Snapshot (csv)<input type="checkbox"><span class="checkmark"></span><span class="dailyReportfileSize">(13.37 KB)</span></label><button class="fav" aria-pressed="false"><i class="fa fa-star-o" aria-label="Favorite"></i> </button><span class="reportCardSegment asondate">ind_close_all_03102025.csv</span><span class="reportDownloadIcon"><a href="javascript:;" target="_self" download="download" class="pdf-download-link" aria-label="Download File"></a> </span>   </div>  </div> </div></div></div>
+                                                                        <div class="col-12">
+                                                                            <h4 class="section-heading"> Reports for <span id="cr_indices_prevDate">01-Oct-2025</span></h4>
+                                                                        </div>
+                                                                        <div id="cr_indices_daily_Previous" class="row my-3 checkrow withfavicons"><div class="row col-12"><div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-link="https://nsearchives.nseindia.com/content/indices/top10nifty50_011025.csv" data-cat="capital-market" data-section="indices" data-type="daily-reports">  <div class="card h-100"> <div class="card-body position-relative">  <label class="chk_container" role="checkbox" aria-checked="false" aria-label="Select Report">NIFTY 50 Top 10 Holdings (csv)<input type="checkbox"><span class="checkmark"></span><span class="dailyReportfileSize">(0.34 KB)</span></label><button class="fav" aria-pressed="false"><i class="fa fa-star-o" aria-label="Favorite"></i> </button><span class="reportCardSegment asondate">top10nifty50_011025.csv</span><span class="reportDownloadIcon"><a href="javascript:;" target="_self" download="download" class="pdf-download-link" aria-label="Download File"></a> </span>   </div>  </div> </div><div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-link="https://nsearchives.nseindia.com/content/indices/ind_close_all_01102025.csv" data-cat="capital-market" data-section="indices" data-type="daily-reports">  <div class="card h-100"> <div class="card-body position-relative">  <label class="chk_container" role="checkbox" aria-checked="false" aria-label="Select Report">Daily Snapshot (csv)<input type="checkbox"><span class="checkmark"></span><span class="dailyReportfileSize">(13.44 KB)</span></label><button class="fav" aria-pressed="false"><i class="fa fa-star-o" aria-label="Favorite"></i> </button><span class="reportCardSegment asondate">ind_close_all_01102025.csv</span><span class="reportDownloadIcon"><a href="javascript:;" target="_self" download="download" class="pdf-download-link" aria-label="Download File"></a> </span>   </div>  </div> </div></div></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="cr_indices_monthly" role="tabpanel">
+                                                                    <div class="report_container mt-md-2">
+                                                                        <div class="row">
+                                                                            <!-- <div class="col-md-4">
+                                                                                <p class="section-heading">Reports for <span class="reportTodaysDate"></span></p>
+                                                                            </div> -->
+                                                                            <div class="col-md-4">
+                                                                                <p class="formLabelStyle">
+                                                                                    <label for="crindicesMonthlySearch">Search a Report:</label>
+                                                                                    <input id="crindicesMonthlySearch" onkeyup="filterReports(this.value, '#cr_indices_monthly')" type="text" class="form-control searchby_input" placeholder="Enter a keyword">
+                                                                                </p>
+                                                                            </div>
+                                                                            <!-- <div class="col-md-4">
+                                                                                <div class="datebox_wrap">
+                                                                                    <div class="row date-format-relate">
+                                                                                        <div class="labeldate">Date</div>
+                                                                                        <input id="cr_indices_monthly_date" class="startDate-block-deals dtpicker" value="Select Date" readonly  data-fromDate=""/>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div> -->
+                                                                        </div>
+                                                                        <div class="row align-items-center mt-3">
+                                                                            <div class="col-12">
+                                                                                <label class="chk_container" role="checkbox" aria-checked="false" aria-labelledby="select all" tabindex="0">Select All Reports
+                                                                                    <input type="checkbox" class="check_uncheck">
+                                                                                    <span class="checkmark"></span>
+                                                                                </label>
+                                                                                <a onclick="downloadReports('#cr_indices_monthly')" href="javascript:;" class="link ms-3"> Multiple file Download <i class="fa fa-download"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="cr_indices_monthly_report" class="row my-3 checkrow">
+                                                                            <!--<div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">IISL Index Dashboard (.pdf)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Details of past changes to constituents (.xls)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Indices Market Capitalisation &amp; Weightage (.zip)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Monthly Index Return
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Market Capitalisation, Weightage, Beta-NIFTY50
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Market Capitalisation, Weightage, Beta-NIFTY Next 50
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Impact cost NIFTY 50 .csv
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Impact cost NIFTY 50 NEXT .csv
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Approved list of Securities (.zip)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Approved list of Mutual Funds (.zip)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Approved list of Corporate bond (.zip)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Approved list of GSEC and TBILL (.zip)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">Approved list of Banks for issuance of BG and FDR (.zip)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="monthly-reports">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container">NSE Market Pulse (.pdf)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_monthly', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>-->
+
+                                                                        <div class="row col-12"><div class="item col-md-4 mb-3">No Report.</div></div></div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="tab-pane fade active show" id="cr_indices_archives" role="tabpanel">
+                                                                    <div class="report_container mt-md-2">
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <p class="formLabelStyle">
+                                                                                    <label for="crindicesArchivesSearch">Search a Report:</label>
+                                                                                    <input id="crindicesArchivesSearch" onkeyup="filterReports(this.value, '#cr_indices_archives')" type="text" class="form-control searchby_input" placeholder="Enter a keyword">
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="datebox_wrap">
+                                                                                    <div class="row date-format-relate">
+                                                                                        <div id="cr_indices_archives_dateLbl" class="labeldate">Date</div>
+                                                                                        <div role="dialog" aria-label="Datepicker" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group"><input aria-labelledby="cr_indices_archives_dateLbl" id="cr_indices_archives_date" class="startDate-block-deals dtpicker form-control" value="Select Date" readonly="" data-fromdate="" data-type="datepicker" data-guid="70d8287c-06cc-abca-87af-27d412ca06ba" data-datepicker="true"><span class="input-group-append" role="button" aria-label="Right Icon"><button class="btn btn-outline-secondary border-left-0" type="button" aria-label="Datepicker button"><i class="fa fa-calendar" aria-hidden="true"></i></button></span></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row align-items-center mt-3">
+                                                                            <div class="col-12">
+                                                                                <label class="chk_container" role="checkbox" aria-checked="true" aria-labelledby="select all" tabindex="0">Select All Reports
+                                                                                    <input type="checkbox" class="check_uncheck">
+                                                                                    <span class="checkmark"></span>
+                                                                                </label>
+                                                                                <a onclick="downloadReports('#cr_indices_archives')" href="javascript:;" class="link ms-3"> Multiple file Download <i class="fa fa-download"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3 checkrow">
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="archives">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container" tabindex="0">Daily Snapshot
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_archives', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="archives">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container" tabindex="0">Market Capitalisation, Weightage,Beta for NIFTY 50 &amp; NIFTY Next 50
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_archives', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="archives">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container" tabindex="0">Impact Cost
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_archives', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="archives">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container" tabindex="0">Indices - Market Capitalisation &amp; Weightage
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_archives', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="archives">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container" tabindex="0">Index Dashboard - Fixed Income
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_archives', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="archives">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container" tabindex="0">NIFTY 50 Top 10 Holdings (csv)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_archives', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="archives">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container" tabindex="0">Index Dashboard - Equity
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_archives', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="tab-pane fade" id="cr_indices_common" role="tabpanel">
+                                                                    <div class="report_container mt-md-2">
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <!--<p class="section-heading">Reports for <span class="reportTodaysDate"></span></p>-->
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <p class="formLabelStyle">
+                                                                                    <label for="crindicesComSearch">Search a Report:</label>
+                                                                                    <input id="crindicesComSearch" onkeyup="filterReports(this.value, '#cr_indices_common')" type="text" class="form-control searchby_input" placeholder="Enter a keyword">
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="datebox_wrap">
+                                                                                    <div class="row date-format-relate">
+                                                                                        <div id="cr_indices_common_dateLbl" class="labeldate">Date</div>
+                                                                                        <div role="dialog" aria-label="Datepicker" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group"><input aria-labelledby="cr_indices_common_dateLbl" id="cr_indices_common_date" class="startDate-block-deals dtpicker form-control" value="Select Date" readonly="" data-fromdate="" data-type="datepicker" data-guid="582fdbc8-5df8-3e44-24c5-b90873cd3156" data-datepicker="true"><span class="input-group-append" role="button" aria-label="Right Icon"><button class="btn btn-outline-secondary border-left-0" type="button" aria-label="Datepicker button"><i class="fa fa-calendar" aria-hidden="true"></i></button></span></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row align-items-center mt-3">
+                                                                            <div class="col-12">
+                                                                                <label class="chk_container" role="checkbox" aria-checked="false" aria-labelledby="select all" tabindex="0">Select All Reports
+                                                                                    <input type="checkbox" class="check_uncheck">
+                                                                                    <span class="checkmark"></span>
+                                                                                </label>
+                                                                                <a onclick="downloadReports('#cr_indices_common')" href="javascript:;" class="link ms-3"> Multiple file Download <i class="fa fa-download"></i></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row my-3 checkrow">
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="common">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container" tabindex="0">Haircut for Approved Securities
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_common', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-4 col-sm-6 my-2 reportsDownload" data-cat="capital-market" data-section="indices" data-type="common">
+                                                                                <div class="card h-100">
+                                                                                    <div class="card-body">
+                                                                                        <label class="chk_container" tabindex="0">Haircut for Mutual Funds(csv)
+                                                                                            <input type="checkbox">
+                                                                                            <span class="checkmark"></span>
+                                                                                        </label>
+                                                                                        <span class="reportDownloadIcon"><a aria-label="Download File" onclick="SingledownloadReports('#cr_indices_common', 'indices', this)" href="javascript:;" class="pdf-download-link"></a> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
