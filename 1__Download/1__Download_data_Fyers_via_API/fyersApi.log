@@ -115,3 +115,4 @@
 {"level":"ERROR","location":"[get_call:146] fyersModel","message":{"API":"/profile","Error":{"s":"error","code":-8,"message":"Your token has expired. Please generate a token"}},"timestamp":"2025-10-14 11:46:07,355+0530","service":"FyersAPI"}
 {"level":"ERROR","location":"[get_call:146] fyersModel","message":{"API":"/profile","Error":{"s":"error","code":-8,"message":"Your token has expired. Please generate a token"}},"timestamp":"2025-10-15 13:34:10,197+0530","service":"FyersAPI"}
 {"level":"ERROR","location":"[get_call:146] fyersModel","message":{"API":"/profile","Error":{"s":"error","code":-8,"message":"Your token has expired. Please generate a token"}},"timestamp":"2025-10-16 14:59:16,990+0530","service":"FyersAPI"}
+{"level":"ERROR","location":"[get_call:146] fyersModel","message":{"API":"/profile","Error":{"s":"error","code":-8,"message":"Your token has expired. Please generate a token"}},"timestamp":"2025-10-17 16:41:59,608+0530","service":"FyersAPI"}
